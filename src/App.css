@@ -7,13 +7,12 @@
   font-style: normal;
 }
 
+/* General Styles */
+
 body {
   height: 100vh;
   max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgba(31, 33, 40, 1);
+  position: relative;
 }
 
 button {
@@ -26,6 +25,7 @@ button {
 path {
   transition: stroke 0.2s ease-in-out;
 }
+/* Multi Select Container */
 
 .multi-select-container {
   width: 370px;
@@ -33,7 +33,15 @@ path {
   box-shadow: 0px 8px 15px 0px rgba(20, 20, 20, 0.12),
     0px 0px 4px 0px rgba(20, 20, 20, 0.1);
   border-radius: 6px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  position: absolute;
+  top: 115px;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+/* Selectable Item */
+
 .selectable-container {
   width: 100%;
   padding: 3.5px 15px 3.5px 22px;
@@ -44,10 +52,13 @@ path {
 
 .selectable-label {
   font-size: 14px;
+  color: rgba(31, 33, 40, 1);
   font-weight: 400;
   cursor: pointer;
   line-height: 130%;
 }
+
+/* Checkbox */
 
 .checkbox-container {
   display: flex;
@@ -57,21 +68,12 @@ path {
   height: 35px;
 }
 
-/*
-Checkbox styles:
-non-selected,
-non-selected:hover,
-selectd,
-selected:hover
-*/
-
 .checkbox {
   width: 23px;
   height: 23px;
   cursor: pointer;
   border-radius: 6px;
   border: 1px solid rgba(205, 205, 205, 1);
-  transition: all 0.2s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,6 +100,8 @@ selected:hover
   background-color: rgba(80, 135, 248, 1);
 }
 
+/* Horizontal Rule */
+
 hr {
   border: none;
   border-top: 0.7px solid rgba(205, 205, 205, 1);
@@ -107,9 +111,12 @@ hr {
   margin-bottom: 10px;
 }
 
+/* Submit Button */
+
 .submit {
   width: 340px;
   background-color: rgba(255, 206, 34, 1);
+  color: rgba(31, 33, 40, 1);
   transition: 0.2s ease-in-out;
   padding: 11px;
   font-size: 14px;

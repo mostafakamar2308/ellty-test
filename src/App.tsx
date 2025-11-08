@@ -81,7 +81,6 @@ const App: React.FC = () => {
     { id: "2", label: "Page 2", selected: false },
     { id: "3", label: "Page 3", selected: true },
     { id: "4", label: "Page 4", selected: false },
-    { id: "5", label: "Page 5", selected: false },
   ]);
 
   const onSelect = useCallback((id: string) => {
